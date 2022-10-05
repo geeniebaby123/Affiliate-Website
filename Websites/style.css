@@ -1,0 +1,399 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1662885736539-d69963254080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fd04043f;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+.obi {
+    text-transform: uppercase;
+}
+#obi {
+    background-color: rgb(50, 250, 250);
+}
+form {
+    border: 5px double blue;
+    background-color: rgba(40, 143, 143, 0.514);
+    width: 15vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.Password::placeholder {
+    color: red;
+}
+table {
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(250, 235, 215, 0.5);
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 2px solid red;
+    border-radius: 50px;
+    transform: rotate(-5deg);
+    animation-name: today;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes today {
+    0% {transform: rotate(0); }
+    100% {transform: rotate(-5deg);}
+}
+td, th {
+    border: 2px solid red;
+    padding: 20px;
+    /* transform: rotate(10deg); */
+}
+tr:nth-child(odd) {
+    background-color: rgba(0, 47, 255, 0.5);
+}
+tbody {
+    border-radius: 30px;
+}
+/* width */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px green;
+    border-radius: 30px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 0px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: -1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#grad1 {
+    height: 200px;
+    background-color: red; /*  for browsers that do not support gradients */
+    background-image: conic-gradient(pink 1%, purple 99%);
+}
+#grad2 {
+    height: 200px;
+    background-color: red; /*  for browsers that do not support gradients */
+    background-image: radial-gradient(red 30%, orange 70%);
+}
+#grad3 {
+    height: 200px;
+    background-color: red; /*  for browsers that do not support gradients */
+    background-image: linear-gradient(red 10%, green 85%, blue 80%);
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* The DropdownContainer */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+/* dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /*Important for vertical align on mobile phone */
+    margin: 0;
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px green;
+    z-index: 1;
+    font-weight: 20px;
+    /* white-space: 2px; */
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* Add a grey background color to drop down links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* OVERLAY */
+.container{
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+.image{
+    display: auto;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in;
+    background-color: #008CBA;
+}
+.overlay1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.container:hover .overlay {
+    opacity: 1;
+}
+.container:hover .overlay1 {
+    opacity: 1;
+}
+.container:hover .overlay2 {
+    opacity: 1;
+}
+.obi{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.grace{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.ray{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+                /* New */
+.new {
+    width: 100%;
+    text-align: center;
+}
+.new p {
+    font-size: 20px;
+    color: brown;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.new>p {
+    font-size: 100px;
+    color: aqua;
+    font-family: cursive;
+}
+.everything {
+    display: flex;
+    justify-content: space-around;
+}
+.contain {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+img {
+    height: 300px; 
+    width: 300px;
+    border-radius: 30%;
+}
+.over-lay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 30%;
+}
+.a {
+    background-color: blueviolet;
+}
+.b {
+    background-color: rgb(43, 226, 83);
+}
+.c {
+    background-color: rgb(226, 208, 43);
+}
+.contain:hover .over-lay {
+    opacity: 1;
+}
+/* Hamburger navigation menu */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.topnav a:active{
+    background-color: #04AA6D;
+    color: white;
+}
+.topnav .icon{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .topnav a:not(:first-child){display: none;}
+    .topnav a.icon{
+        float:right;
+        display: block;
+    }
+}
+@media  screen and (max-width: 600px){
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/* Media query responsive column layout */
+*{
+    box-sizing: border-box;
+}
+/* Create four equal columns that floanext to each other */
+.column{
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* On screens that are 992px wide or less, go from four columns to two columns*/
+@media screen and (max-width: 992px){
+    .column{
+        width: 50%;
+    }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px){
+    .column{
+        width: 100%;
+    }
+}
